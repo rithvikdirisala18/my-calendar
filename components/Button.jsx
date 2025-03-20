@@ -1,3 +1,4 @@
+/* components/Button.jsx */
 export default function GlowingButton({ text = "See More" }) {
     return (
       <button className="group relative h-16 w-64 border border-gray-600 text-left text-white font-bold p-3 rounded-lg overflow-hidden

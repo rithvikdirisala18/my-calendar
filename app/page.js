@@ -16,7 +16,7 @@ export default function Home() {
       <p className="text-gray-400 text-lg">Stay organized with your tasks and meetings.</p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-6">
-        <Card className="w-72 shadow-lg hover:shadow-2xl bg-[#181818] transition-all duration-300">
+        <Card className="w-72 shadow-lg hover:shadow-2xl bg-[#181818] transition-all duration-200 transform hover:scale-105">
           <CardHeader>
             <CardTitle className="flex items-center gap-2 text-white">
               <Calendar className="w-6 h-6 text-[#FF9F1C]" /> Calendar
@@ -27,7 +27,7 @@ export default function Home() {
           </CardContent>
         </Card>
 
-        <Card className="w-72 shadow-lg hover:shadow-2xl bg-[#181818] transition-all duration-300">
+        <Card className="w-72 shadow-lg hover:shadow-2xl bg-[#181818] transition-all duration-200 transform hover:scale-105">
           <CardHeader>
             <CardTitle className="flex items-center gap-2 text-white">
               <CheckCircle className="w-6 h-6 text-[#FFBF69]" /> Tasks
@@ -38,7 +38,7 @@ export default function Home() {
           </CardContent>
         </Card>
 
-        <Card className="w-72 shadow-lg hover:shadow-2xl bg-[#181818] transition-all duration-300">
+        <Card className="w-72 shadow-lg hover:shadow-2xl bg-[#181818] transition-all duration-200 transform hover:scale-105">
           <CardHeader>
             <CardTitle className="flex items-center gap-2 text-white">
               <Clock className="w-6 h-6 text-[#CB997E]" /> Reminders
@@ -50,7 +50,7 @@ export default function Home() {
         </Card>
       </div>
 
-      {/* Add Task Button */}
+      {/* Add Task Button
       <motion.button
         onClick={() => setShowModal(true)}
         whileHover={{ scale: 1.1 }}
@@ -60,7 +60,7 @@ export default function Home() {
           after:absolute after:w-20 after:h-20 after:content-[''] after:bg-rose-300 after:right-8 after:top-3 after:rounded-full after:blur-lg"
       >
         Add Task
-      </motion.button>
+      </motion.button> */}
 
       {/* Task Modal */}
       {showModal && <TaskModal closeModal={() => setShowModal(false)} />}
